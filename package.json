@@ -1,0 +1,20 @@
+{
+  "name": "assurance-site-qa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright UI test framework for an assurance website",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test tests/smoke",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "dotenv": "^16.6.1"
+  }
+}
